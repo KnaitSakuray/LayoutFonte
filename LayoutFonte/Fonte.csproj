@@ -1,0 +1,436 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9146F4BB-5A45-4DE3-8933-3FA12310CCDD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Fonte</RootNamespace>
+    <AssemblyName>Fonte</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <PublishUrl>\\MAO49-SFIS-DEV\PublishFonte\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>http://ext-sfis-dev/FONTE/</InstallUrl>
+    <ProductName>Power Supply</ProductName>
+    <PublisherName>SISTEMA TI EXTREMA</PublisherName>
+    <SuiteName>SetupPowerSupply</SuiteName>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>FONTE.html</WebPage>
+    <ApplicationRevision>19</ApplicationRevision>
+    <ApplicationVersion>1.0.1.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>iconfinder-weather-weather-forecast-lightning-storm-energy-3859139_121230.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>24A28E7FC105565533AA6DEB9612C547DA915F1C</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Fonte_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>LayoutFonte.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.5.0, Culture=neutral, PublicKeyToken=0e99375e54769942, processorArchitecture=MSIL">
+      <HintPath>..\packages\Portable.BouncyCastle.1.8.5\lib\net40\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Logging, Version=3.4.1.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Common.Logging.3.4.1\lib\net40\Common.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Logging.Core, Version=3.4.1.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Common.Logging.Core.3.4.1\lib\net40\Common.Logging.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.0.9.7\lib\net45\LiveCharts.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts.WinForms, Version=0.9.7.1, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.WinForms.0.9.7.1\lib\net45\LiveCharts.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts.Wpf, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.Wpf.0.9.7\lib\net45\LiveCharts.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroFramework.Fonts.1.2.0.3\lib\net40\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+    <Reference Include="zxing, Version=0.16.6.0, Culture=neutral, PublicKeyToken=4e88037ac681fe60, processorArchitecture=MSIL">
+      <HintPath>..\packages\ZXing.Net.0.16.6\lib\net45\zxing.dll</HintPath>
+    </Reference>
+    <Reference Include="zxing.presentation, Version=0.16.6.0, Culture=neutral, PublicKeyToken=4e88037ac681fe60, processorArchitecture=MSIL">
+      <HintPath>..\packages\ZXing.Net.0.16.6\lib\net45\zxing.presentation.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="class\global.cs" />
+    <Compile Include="Conexao.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadModeloFonte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadModeloFonte.Designer.cs">
+      <DependentUpon>frmCadModeloFonte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmconsulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmconsulta.Designer.cs">
+      <DependentUpon>frmconsulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDelete.Designer.cs">
+      <DependentUpon>frmDelete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTeste.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTeste.Designer.cs">
+      <DependentUpon>frmTeste.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUsuario.Designer.cs">
+      <DependentUpon>frmUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GetDiasFonteAB1_Result.cs">
+      <DependentUpon>ModelGetASB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetDiasFonteAB2_Result.cs">
+      <DependentUpon>ModelGetASB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetDiasFonte_Result.cs">
+      <DependentUpon>LoadDays.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Gethoras.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Gethoras.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Gethoras.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Gethoras.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Gethoras.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Gethoras.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="GetHoras_Result.cs">
+      <DependentUpon>Gethoras.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetHotasFonteASB1_Result.cs">
+      <DependentUpon>ModelGetHorasASB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetHotasFonteASB2_Result.cs">
+      <DependentUpon>ModelGetHorasASB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LoadDays.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LoadDays.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LoadDays.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LoadDays.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LoadDays.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LoadDays.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="ModelGetASB.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelGetASB.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelGetASB.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelGetASB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelGetASB.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelGetASB.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="ModelGetHorasASB.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelGetHorasASB.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelGetHorasASB.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelGetHorasASB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelGetHorasASB.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelGetHorasASB.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="principal.Designer.cs">
+      <DependentUpon>principal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadModeloFonte.resx">
+      <DependentUpon>frmCadModeloFonte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmconsulta.resx">
+      <DependentUpon>frmconsulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDelete.resx">
+      <DependentUpon>frmDelete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTeste.resx">
+      <DependentUpon>frmTeste.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUsuario.resx">
+      <DependentUpon>frmUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="principal.resx">
+      <DependentUpon>principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <EntityDeploy Include="LoadDays.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>LoadDays.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <EntityDeploy Include="Gethoras.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Gethoras.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Fonte.exe.config" />
+    <None Include="Gethoras.edmx.diagram">
+      <DependentUpon>Gethoras.edmx</DependentUpon>
+    </None>
+    <None Include="LoadDays.edmx.diagram">
+      <DependentUpon>LoadDays.edmx</DependentUpon>
+    </None>
+    <EntityDeploy Include="ModelGetASB.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ModelGetASB.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="ModelGetASB.edmx.diagram">
+      <DependentUpon>ModelGetASB.edmx</DependentUpon>
+    </None>
+    <EntityDeploy Include="ModelGetHorasASB.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ModelGetHorasASB.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="ModelGetHorasASB.edmx.diagram">
+      <DependentUpon>ModelGetHorasASB.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1485969929-12-plus_78898.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\searchzoomflat_106031.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1485969921-5-refresh_78908.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1485969927-6-cross_78905.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\security-protection-protect-key-password-login_108554 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Gethoras.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Gethoras.edmx</DependentUpon>
+      <LastGenOutput>Gethoras.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Gethoras.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Gethoras.edmx</DependentUpon>
+      <LastGenOutput>Gethoras.cs</LastGenOutput>
+    </Content>
+    <Content Include="iconfinder-weather-weather-forecast-lightning-storm-energy-3859139_121230.ico" />
+    <Content Include="LoadDays.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>LoadDays.Context.cs</LastGenOutput>
+      <DependentUpon>LoadDays.edmx</DependentUpon>
+    </Content>
+    <Content Include="LoadDays.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>LoadDays.edmx</DependentUpon>
+      <LastGenOutput>LoadDays.cs</LastGenOutput>
+    </Content>
+    <Content Include="MetroFramework.txt" />
+    <Content Include="ModelGetASB.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ModelGetASB.edmx</DependentUpon>
+      <LastGenOutput>ModelGetASB.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="ModelGetASB.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ModelGetASB.edmx</DependentUpon>
+      <LastGenOutput>ModelGetASB.cs</LastGenOutput>
+    </Content>
+    <Content Include="ModelGetHorasASB.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ModelGetHorasASB.edmx</DependentUpon>
+      <LastGenOutput>ModelGetHorasASB.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="ModelGetHorasASB.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ModelGetHorasASB.edmx</DependentUpon>
+      <LastGenOutput>ModelGetHorasASB.cs</LastGenOutput>
+    </Content>
+    <None Include="Resources\Sombra2.PNG" />
+    <None Include="Resources\fundolarenja.JPG" />
+    <None Include="Resources\iconfinder-weather-weather-forecast-lightning-storm-energy-3859139_121230.png" />
+    <None Include="Resources\testfonte-removebg-preview.png" />
+    <None Include="Resources\refazer1.png" />
+    <None Include="Resources\refazer-removebg-preview.png" />
+    <None Include="Resources\logoLed.png" />
+    <None Include="Resources\logofull.png" />
+    <None Include="Resources\plus++-removebg-preview.png" />
+    <None Include="Resources\USUARIO-removebg-preview.png" />
+    <None Include="Resources\yield-removebg-preview.png" />
+    <None Include="Resources\lupa-removebg-preview.png" />
+    <None Include="Resources\buttongreen.png" />
+    <None Include="Resources\buttongreen-removebg-preview.png" />
+    <None Include="Resources\senha-removebg-preview.png" />
+    <None Include="Resources\usuarioInicio-removebg-preview.png" />
+    <None Include="Resources\print.png" />
+    <None Include="Resources\kisspng-production-line-assembly-line-manufacturing-comput-industry-5ac1a4b39c3a38.9569339515226400516399.jpg" />
+    <None Include="Resources\cslogin_104358.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6 %28x86 e x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

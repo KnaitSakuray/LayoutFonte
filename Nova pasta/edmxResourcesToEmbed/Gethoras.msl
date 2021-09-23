@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="FONTEModelHorasStoreContainer" CdmEntityContainer="FONTEEntitiesHoras">
+    <FunctionImportMapping FunctionImportName="GetHoras" FunctionName="FONTEModelHoras.Store.GetHoras">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="FONTEModelHoras.GetHoras_Result">
+          <ScalarProperty Name="hora" ColumnName="hora" />
+          <ScalarProperty Name="total" ColumnName="total" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

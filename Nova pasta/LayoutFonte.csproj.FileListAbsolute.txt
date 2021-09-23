@@ -1,0 +1,17 @@
+C:\Users\matheus.venancio\source\repos\LayoutFonte\LayoutFonte\bin\Debug\LayoutFonte.exe
+C:\Users\matheus.venancio\source\repos\LayoutFonte\LayoutFonte\bin\Debug\LayoutFonte.pdb
+C:\Users\matheus.venancio\source\repos\LayoutFonte\LayoutFonte\bin\Debug\MetroFramework.dll
+C:\Users\matheus.venancio\source\repos\LayoutFonte\LayoutFonte\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\matheus.venancio\source\repos\LayoutFonte\LayoutFonte\obj\Debug\LayoutFonte.csprojAssemblyReference.cache
+C:\Users\matheus.venancio\source\repos\LayoutFonte\LayoutFonte\obj\Debug\LayoutFonte.Properties.Resources.resources
+C:\Users\matheus.venancio\source\repos\LayoutFonte\LayoutFonte\obj\Debug\LayoutFonte.csproj.GenerateResource.cache
+C:\Users\matheus.venancio\source\repos\LayoutFonte\LayoutFonte\obj\Debug\LayoutFonte.csproj.CoreCompileInputs.cache
+C:\Users\matheus.venancio\source\repos\LayoutFonte\LayoutFonte\obj\Debug\LayoutFonte.csproj.CopyComplete
+C:\Users\matheus.venancio\source\repos\LayoutFonte\LayoutFonte\obj\Debug\LayoutFonte.exe
+C:\Users\matheus.venancio\source\repos\LayoutFonte\LayoutFonte\obj\Debug\LayoutFonte.pdb
+C:\Users\matheus.venancio\source\repos\LayoutFonte\LayoutFonte\obj\Debug\LayoutFonte.Login.resources
+C:\Users\matheus.venancio\source\repos\LayoutFonte\LayoutFonte\obj\Debug\LayoutFonte.principal.resources
+C:\Users\matheus.venancio\source\repos\LayoutFonte\LayoutFonte\obj\Debug\LayoutFonte.frmCadModeloFonte.resources
+C:\Users\matheus.venancio\source\repos\LayoutFonte\LayoutFonte\obj\Debug\LayoutFonte.frmUsuario.resources
+C:\Users\matheus.venancio\source\repos\LayoutFonte\LayoutFonte\obj\Debug\LayoutFonte.frmconsulta.resources
+C:\Users\matheus.venancio\source\repos\LayoutFonte\LayoutFonte\bin\Debug\LayoutFonte.exe.config

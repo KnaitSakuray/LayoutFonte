@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="FONTEModelASB" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="FONTEEntities" annotation:LazyLoadingEnabled="true">
+    <FunctionImport Name="GetDiasFonteAB1" ReturnType="Collection(FONTEModelASB.GetDiasFonteAB1_Result)" />
+    <FunctionImport Name="GetDiasFonteAB2" ReturnType="Collection(FONTEModelASB.GetDiasFonteAB2_Result)" />
+  </EntityContainer>
+  <ComplexType Name="GetDiasFonteAB1_Result">
+    <Property Type="Int32" Name="DIA" Nullable="true" />
+    <Property Type="Int32" Name="total" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="GetDiasFonteAB2_Result">
+    <Property Type="Int32" Name="DIA" Nullable="true" />
+    <Property Type="Int32" Name="total" Nullable="true" />
+  </ComplexType>
+</Schema>

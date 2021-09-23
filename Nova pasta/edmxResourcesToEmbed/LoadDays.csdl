@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="FONTEModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="FONTEEntitiesDias" annotation:LazyLoadingEnabled="true">
+    <FunctionImport Name="GetDiasFonte" ReturnType="Collection(FONTEModel.GetDiasFonte_Result)" />
+  </EntityContainer>
+  <ComplexType Name="GetDiasFonte_Result">
+    <Property Type="Int32" Name="DIA" Nullable="true" />
+    <Property Type="Int32" Name="total" Nullable="true" />
+  </ComplexType>
+</Schema>
