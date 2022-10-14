@@ -13,7 +13,7 @@ namespace LayoutFonte
             get { return _filial; }
             set { _filial = value; }
         }
-        private static string _ROTA = "Data Source = 192.168.108.16\\SQLEXPRESS; Initial Catalog = ROTA; Persist Security Info=True;User ID = crud; Password=2B2XWXMV";
+        private static string _ROTA = "";
         public static string ROTA
         {
             get { return _ROTA; }
